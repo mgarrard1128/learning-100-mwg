@@ -7,45 +7,21 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="column">
-            <input type="number"
-                   id="num1">
-            <input type="number"
-                   id="num2">
-        </div>
-        <div class="column">
-            <div>
-                <input type="radio"
-                       name="mathGroup"
-                       id="addRadioButton">
-                <label for="addRadioButton">+</label>
-            </div>
-            <div>
-                <input type="radio"
-                       name="mathGroup"
-                       id="subtractRadioButton">
-                <label for="subtractRadioButton">-</label>
-            </div>
-            <div>
-                <input type="radio"
-                       name="mathGroup"
-                       id="multiplyRadioButton">
-                <label for="multiplyRadioButton">*</label>
-            </div>
-            <div>
-                <input type="radio"
-                       name="mathGroup"
-                       id="divideRadioButton">
-                <label for="divideRadioButton">/</label>
-            </div>
-            <div>
-                <input type="button"
-                       id="add"
-                       value="=">
-                <span id="answer"></span>
-            </div>
-        </div>
+    <div>
+        <input type="number"
+               id="num1">
+        <select id="mathDropDown">
+            <option value="Add">+</option>
+            <option value="Subtract">-</option>
+            <option value="Multiply">*</option>
+            <option value="Divide">/</option>
+        </select>
+        <input type="number"
+               id="num2">
+        <input type="button"
+               id="add"
+               value="=">
+        <span id="answer"></span>
     </div>
 </body>
 

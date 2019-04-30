@@ -11,21 +11,23 @@ const addRadioButton = document.getElementById('addRadioButton') as HTMLInputEle
 const subtractRadioButton = document.getElementById('subtractRadioButton') as HTMLInputElement;
 const multiplyRadioButton = document.getElementById('multiplyRadioButton') as HTMLInputElement;
 const divideRadioButton = document.getElementById('divideRadioButton') as HTMLInputElement;
+const mathSelection = document.getElementById('mathDropDown') as HTMLSelectElement;
+
 
 function doMath() {
     const n1 = num1.valueAsNumber;
     const n2 = num2.valueAsNumber;
     var returnValue;
-    if (addRadioButton.checked) {
+    if (mathSelection.value == "Add") {
         returnValue = add(n1, n2);
     }
-    else if (subtractRadioButton.checked) {
+    else if (mathSelection.value == "Subtract") {
         returnValue = subtract(n1, n2);
     }
-    else if (multiplyRadioButton.checked) {
+    else if (mathSelection.value == "Multiply") {
         returnValue = multiply(n1, n2);
     }
-    else if (divideRadioButton.checked) {
+    else if (mathSelection.value == "Divide") {
         returnValue = divide(n1, n2);
     }
     else {
