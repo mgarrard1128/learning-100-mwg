@@ -14,4 +14,5 @@ describe('Math', function () {
     it('can divide', () => {
         expect(divide(a, b)).toBe(2);
     });
+
 });
